@@ -2,6 +2,7 @@
 const express = require("express");
 const sequelize = require("./database/db");
 const cors = require("cors");
+const form_Router = require("./controllers/form_controller");
 
 // Initialize the express app
 const app = express();
@@ -25,10 +26,10 @@ sequelize
 
 // Define a simple route
 app.get("/", (req, res) => {
-  res.send(
-    "Hello, World! This is a simple Express server with CORS and JSON body support."
-  );
+  res.send("Hello, World! This is a ceylon Ambessodor server --- .");
 });
+
+app.use("/form", form_Router);
 
 // Start the server
 app.listen(port, () => {
