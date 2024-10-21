@@ -14,3 +14,13 @@ const createContactForm = async (data) => {
 module.exports = {
   createContactForm,
 };
+
+// create method for get all contact messgaes
+const getAllContactMessages = async () => {
+  try {
+    const contactMessages = await ContactMessage.findAll();
+    return contactMessages;
+  } catch (error) {
+    throw error;
+  }
+};
