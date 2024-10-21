@@ -3,7 +3,7 @@ const express = require("express");
 const sequelize = require("./database/db");
 const cors = require("cors");
 const form_Router = require("./controllers/form_controller");
-
+const message_router = require("./controllers/message_controller");
 // Initialize the express app
 const app = express();
 
@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/form", form_Router);
+app.use("/message", message_router);
 
 // Start the server
 app.listen(port, () => {
