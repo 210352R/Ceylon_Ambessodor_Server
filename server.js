@@ -7,7 +7,7 @@ const message_router = require("./controllers/message_controller");
 // Initialize the express app
 const app = express();
 
-const port = 5000;
+const port = 8080;
 
 app.use(cors());
 
