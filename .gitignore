@@ -42,3 +42,4 @@ bower_components/
 # Operating system-specific files (Optional)
 .DS_Store # macOS
 Thumbs.db # Windows
+.vercel

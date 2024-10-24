@@ -10,10 +10,6 @@ const createFormSubmission = async (data) => {
   }
 };
 
-module.exports = {
-  createFormSubmission,
-};
-
 // create method for get all form submissions
 const getAllFormSubmissions = async () => {
   try {
@@ -22,4 +18,9 @@ const getAllFormSubmissions = async () => {
   } catch (error) {
     throw error;
   }
+};
+
+module.exports = {
+  createFormSubmission,
+  getAllFormSubmissions,
 };

@@ -11,10 +11,6 @@ const createContactForm = async (data) => {
   }
 };
 
-module.exports = {
-  createContactForm,
-};
-
 // create method for get all contact messgaes
 const getAllContactMessages = async () => {
   try {
@@ -23,4 +19,9 @@ const getAllContactMessages = async () => {
   } catch (error) {
     throw error;
   }
+};
+
+module.exports = {
+  createContactForm,
+  getAllContactMessages,
 };
